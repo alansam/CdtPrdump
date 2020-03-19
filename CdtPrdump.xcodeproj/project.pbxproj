@@ -7,7 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		5A77F92024243065009813E7 /* main.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 5A77F91F24243065009813E7 /* main.cpp */; };
+		5A77F92024243065009813E7 /* prdump.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 5A77F91F24243065009813E7 /* prdump.cpp */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXCopyFilesBuildPhase section */
@@ -24,7 +24,8 @@
 
 /* Begin PBXFileReference section */
 		5A77F91C24243065009813E7 /* CdtPrdump */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.executable"; includeInIndex = 0; path = CdtPrdump; sourceTree = BUILT_PRODUCTS_DIR; };
-		5A77F91F24243065009813E7 /* main.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = main.cpp; sourceTree = "<group>"; };
+		5A77F91F24243065009813E7 /* prdump.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = prdump.cpp; sourceTree = "<group>"; };
+		5A77F926242430B6009813E7 /* CompDiff.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = CompDiff.h; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -57,7 +58,8 @@
 		5A77F91E24243065009813E7 /* CdtPrdump */ = {
 			isa = PBXGroup;
 			children = (
-				5A77F91F24243065009813E7 /* main.cpp */,
+				5A77F91F24243065009813E7 /* prdump.cpp */,
+				5A77F926242430B6009813E7 /* CompDiff.h */,
 			);
 			path = CdtPrdump;
 			sourceTree = "<group>";
@@ -119,7 +121,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				5A77F92024243065009813E7 /* main.cpp in Sources */,
+				5A77F92024243065009813E7 /* prdump.cpp in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -238,6 +240,7 @@
 		5A77F92424243065009813E7 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++98";
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = HD3NHZ5324;
 				ENABLE_HARDENED_RUNTIME = YES;
@@ -248,6 +251,7 @@
 		5A77F92524243065009813E7 /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++98";
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = HD3NHZ5324;
 				ENABLE_HARDENED_RUNTIME = YES;

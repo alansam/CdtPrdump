@@ -26,6 +26,50 @@
 		5A77F91C24243065009813E7 /* CdtPrdump */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.executable"; includeInIndex = 0; path = CdtPrdump; sourceTree = BUILT_PRODUCTS_DIR; };
 		5A77F91F24243065009813E7 /* prdump.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = prdump.cpp; sourceTree = "<group>"; };
 		5A77F926242430B6009813E7 /* CompDiff.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = CompDiff.h; sourceTree = "<group>"; };
+		5A77F9512427F900009813E7 /* utf8-003.txt */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = "utf8-003.txt"; sourceTree = "<group>"; };
+		5A77F9522427F900009813E7 /* ucs-4.sample003.txt */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = "ucs-4.sample003.txt"; sourceTree = "<group>"; };
+		5A77F9532427F901009813E7 /* utf8-005.txt */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = "utf8-005.txt"; sourceTree = "<group>"; };
+		5A77F9542427F901009813E7 /* test.remedy */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = test.remedy; sourceTree = "<group>"; };
+		5A77F9552427F901009813E7 /* ucs-2.sample004.txt */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = "ucs-2.sample004.txt"; sourceTree = "<group>"; };
+		5A77F9562427F901009813E7 /* example.txt */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = example.txt; sourceTree = "<group>"; };
+		5A77F9572427F901009813E7 /* example.utf-16BE.txt */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = "example.utf-16BE.txt"; sourceTree = "<group>"; };
+		5A77F9582427F901009813E7 /* example.utf-16LE.txt */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = "example.utf-16LE.txt"; sourceTree = "<group>"; };
+		5A77F9592427F901009813E7 /* example.gz.txt */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = example.gz.txt; sourceTree = "<group>"; };
+		5A77F95A2427F901009813E7 /* utf8-006.txt */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = "utf8-006.txt"; sourceTree = "<group>"; };
+		5A77F95B2427F901009813E7 /* ReadInputCSVFile.csv */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = ReadInputCSVFile.csv; sourceTree = "<group>"; };
+		5A77F95C2427F901009813E7 /* offending_bom3.txt */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = offending_bom3.txt; sourceTree = "<group>"; };
+		5A77F95D2427F901009813E7 /* utf-8.sample003.txt */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = "utf-8.sample003.txt"; sourceTree = "<group>"; };
+		5A77F95E2427F901009813E7 /* Alan_UCS2_BE.txt */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = Alan_UCS2_BE.txt; sourceTree = "<group>"; };
+		5A77F95F2427F901009813E7 /* Alan_UCS2_LE.txt */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = Alan_UCS2_LE.txt; sourceTree = "<group>"; };
+		5A77F9602427F901009813E7 /* ucs-2.sample003.txt */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = "ucs-2.sample003.txt"; sourceTree = "<group>"; };
+		5A77F9612427F901009813E7 /* ucs-4.sample002.txt */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = "ucs-4.sample002.txt"; sourceTree = "<group>"; };
+		5A77F9622427F901009813E7 /* utf8-002.txt */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = "utf8-002.txt"; sourceTree = "<group>"; };
+		5A77F9632427F901009813E7 /* offending_bom9.txt */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = offending_bom9.txt; sourceTree = "<group>"; };
+		5A77F9642427F901009813E7 /* ucs-2.sample002.txt */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = "ucs-2.sample002.txt"; sourceTree = "<group>"; };
+		5A77F9652427F901009813E7 /* ucs-2.sample001.txt */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = "ucs-2.sample001.txt"; sourceTree = "<group>"; };
+		5A77F9662427F901009813E7 /* offending_bom6.txt */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = offending_bom6.txt; sourceTree = "<group>"; };
+		5A77F9672427F901009813E7 /* example.ut8 */ = {isa = PBXFileReference; lastKnownFileType = file; path = example.ut8; sourceTree = "<group>"; };
+		5A77F9682427F901009813E7 /* Alan_UTF8_BOM.txt */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = Alan_UTF8_BOM.txt; sourceTree = "<group>"; };
+		5A77F9692427F901009813E7 /* utf-8.sample001.txt */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = "utf-8.sample001.txt"; sourceTree = "<group>"; };
+		5A77F96A2427F901009813E7 /* utf8y.txt */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = utf8y.txt; sourceTree = "<group>"; };
+		5A77F96B2427F901009813E7 /* example.utf-8.txt */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = "example.utf-8.txt"; sourceTree = "<group>"; };
+		5A77F96C2427F902009813E7 /* offending_bom1.txt */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = offending_bom1.txt; sourceTree = "<group>"; };
+		5A77F96D2427F902009813E7 /* offending_bom0.txt */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = offending_bom0.txt; sourceTree = "<group>"; };
+		5A77F96E2427F902009813E7 /* utf8-007.txt */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = "utf8-007.txt"; sourceTree = "<group>"; };
+		5A77F96F2427F902009813E7 /* offending_bom5.txt */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = offending_bom5.txt; sourceTree = "<group>"; };
+		5A77F9702427F902009813E7 /* Unicode2UTF8.out */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = Unicode2UTF8.out; sourceTree = "<group>"; };
+		5A77F9712427F902009813E7 /* ucs-4.sample004.txt */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = "ucs-4.sample004.txt"; sourceTree = "<group>"; };
+		5A77F9722427F902009813E7 /* utf8-001.txt */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = "utf8-001.txt"; sourceTree = "<group>"; };
+		5A77F9732427F902009813E7 /* utf-8.sample004.txt */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = "utf-8.sample004.txt"; sourceTree = "<group>"; };
+		5A77F9742427F902009813E7 /* offending_bom2.txt */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = offending_bom2.txt; sourceTree = "<group>"; };
+		5A77F9752427F902009813E7 /* utf8-004.txt */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = "utf8-004.txt"; sourceTree = "<group>"; };
+		5A77F9762427F902009813E7 /* offending_bom4.txt */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = offending_bom4.txt; sourceTree = "<group>"; };
+		5A77F9772427F902009813E7 /* utf8x.txt */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = utf8x.txt; sourceTree = "<group>"; };
+		5A77F9782427F902009813E7 /* utf-8.sample002.txt */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = "utf-8.sample002.txt"; sourceTree = "<group>"; };
+		5A77F9792427F903009813E7 /* ucs-4.sample001.txt */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = "ucs-4.sample001.txt"; sourceTree = "<group>"; };
+		5A77F97A24280CDD009813E7 /* samplefiles.sh */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.script.sh; path = samplefiles.sh; sourceTree = "<group>"; };
+		5A77F97B24280CF1009813E7 /* bfile1.dat */ = {isa = PBXFileReference; lastKnownFileType = file; path = bfile1.dat; sourceTree = "<group>"; };
+		5A77F97C24280CF1009813E7 /* bfile2.dat */ = {isa = PBXFileReference; lastKnownFileType = file; path = bfile2.dat; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -60,8 +104,60 @@
 			children = (
 				5A77F91F24243065009813E7 /* prdump.cpp */,
 				5A77F926242430B6009813E7 /* CompDiff.h */,
+				5A77F97A24280CDD009813E7 /* samplefiles.sh */,
+				5A77F9502427F5F5009813E7 /* data */,
 			);
 			path = CdtPrdump;
+			sourceTree = "<group>";
+		};
+		5A77F9502427F5F5009813E7 /* data */ = {
+			isa = PBXGroup;
+			children = (
+				5A77F97B24280CF1009813E7 /* bfile1.dat */,
+				5A77F97C24280CF1009813E7 /* bfile2.dat */,
+				5A77F95E2427F901009813E7 /* Alan_UCS2_BE.txt */,
+				5A77F95F2427F901009813E7 /* Alan_UCS2_LE.txt */,
+				5A77F9682427F901009813E7 /* Alan_UTF8_BOM.txt */,
+				5A77F9592427F901009813E7 /* example.gz.txt */,
+				5A77F9562427F901009813E7 /* example.txt */,
+				5A77F9672427F901009813E7 /* example.ut8 */,
+				5A77F96B2427F901009813E7 /* example.utf-8.txt */,
+				5A77F9572427F901009813E7 /* example.utf-16BE.txt */,
+				5A77F9582427F901009813E7 /* example.utf-16LE.txt */,
+				5A77F96D2427F902009813E7 /* offending_bom0.txt */,
+				5A77F96C2427F902009813E7 /* offending_bom1.txt */,
+				5A77F9742427F902009813E7 /* offending_bom2.txt */,
+				5A77F95C2427F901009813E7 /* offending_bom3.txt */,
+				5A77F9762427F902009813E7 /* offending_bom4.txt */,
+				5A77F96F2427F902009813E7 /* offending_bom5.txt */,
+				5A77F9662427F901009813E7 /* offending_bom6.txt */,
+				5A77F9632427F901009813E7 /* offending_bom9.txt */,
+				5A77F95B2427F901009813E7 /* ReadInputCSVFile.csv */,
+				5A77F9542427F901009813E7 /* test.remedy */,
+				5A77F9652427F901009813E7 /* ucs-2.sample001.txt */,
+				5A77F9642427F901009813E7 /* ucs-2.sample002.txt */,
+				5A77F9602427F901009813E7 /* ucs-2.sample003.txt */,
+				5A77F9552427F901009813E7 /* ucs-2.sample004.txt */,
+				5A77F9792427F903009813E7 /* ucs-4.sample001.txt */,
+				5A77F9612427F901009813E7 /* ucs-4.sample002.txt */,
+				5A77F9522427F900009813E7 /* ucs-4.sample003.txt */,
+				5A77F9712427F902009813E7 /* ucs-4.sample004.txt */,
+				5A77F9702427F902009813E7 /* Unicode2UTF8.out */,
+				5A77F9692427F901009813E7 /* utf-8.sample001.txt */,
+				5A77F9782427F902009813E7 /* utf-8.sample002.txt */,
+				5A77F95D2427F901009813E7 /* utf-8.sample003.txt */,
+				5A77F9732427F902009813E7 /* utf-8.sample004.txt */,
+				5A77F9722427F902009813E7 /* utf8-001.txt */,
+				5A77F9622427F901009813E7 /* utf8-002.txt */,
+				5A77F9512427F900009813E7 /* utf8-003.txt */,
+				5A77F9752427F902009813E7 /* utf8-004.txt */,
+				5A77F9532427F901009813E7 /* utf8-005.txt */,
+				5A77F95A2427F901009813E7 /* utf8-006.txt */,
+				5A77F96E2427F902009813E7 /* utf8-007.txt */,
+				5A77F9772427F902009813E7 /* utf8x.txt */,
+				5A77F96A2427F901009813E7 /* utf8y.txt */,
+			);
+			path = data;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -240,7 +336,7 @@
 		5A77F92424243065009813E7 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
-				CLANG_CXX_LANGUAGE_STANDARD = "gnu++98";
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = HD3NHZ5324;
 				ENABLE_HARDENED_RUNTIME = YES;
@@ -251,7 +347,7 @@
 		5A77F92524243065009813E7 /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
-				CLANG_CXX_LANGUAGE_STANDARD = "gnu++98";
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = HD3NHZ5324;
 				ENABLE_HARDENED_RUNTIME = YES;

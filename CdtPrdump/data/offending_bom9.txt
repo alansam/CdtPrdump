@@ -1,0 +1,14 @@
+﻿<html>
+<head><title>Onboarding</title></head>
+<body>
+<p>
+Your Request for creation of new project has been <<Status>>: <br><br>
+<b> Request Number:</b> <<RequestNo>> <br>
+<b> Project Name: </b> <<ProjectName>> <br>
+<b> Tool: </b> <<ToolName>>            <br>
+<b> Comments: </b> <<Comments>>        <br> <br>
+
+You can view your request records using the url: <<RequestURL>> <br>
+</p>
+</body>
+</html>

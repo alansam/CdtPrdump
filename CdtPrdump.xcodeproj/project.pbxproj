@@ -70,6 +70,7 @@
 		5A77F97A24280CDD009813E7 /* samplefiles.sh */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.script.sh; path = samplefiles.sh; sourceTree = "<group>"; };
 		5A77F97B24280CF1009813E7 /* bfile1.dat */ = {isa = PBXFileReference; lastKnownFileType = file; path = bfile1.dat; sourceTree = "<group>"; };
 		5A77F97C24280CF1009813E7 /* bfile2.dat */ = {isa = PBXFileReference; lastKnownFileType = file; path = bfile2.dat; sourceTree = "<group>"; };
+		5A839C4B242C03F100E03A5B /* README.md */ = {isa = PBXFileReference; lastKnownFileType = net.daringfireball.markdown; path = README.md; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -86,6 +87,7 @@
 		5A77F91324243065009813E7 = {
 			isa = PBXGroup;
 			children = (
+				5A839C4B242C03F100E03A5B /* README.md */,
 				5A77F91E24243065009813E7 /* CdtPrdump */,
 				5A77F91D24243065009813E7 /* Products */,
 			);

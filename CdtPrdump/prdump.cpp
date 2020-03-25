@@ -16,7 +16,13 @@
 // -------------+-------+-------------------+----------------------------------
 //
 /*
+ *  MARK: - Change Log
  *  $Log: $
+ *    2020-03-22 - 001 - Improve method used to redirect output streams to files
+ *
+ *  MARK: - References.
+ *  @see: https://stackoverflow.com/questions/10150468/how-to-redirect-cin-and-cout-to-files
+ *
  *
  */
 //
@@ -33,8 +39,6 @@
 #include <cstdlib>
 #include <cstdio>
 #include <cctype>
-
-//using namespace std;
 
 #include "CompDiff.h"
 
@@ -78,9 +82,6 @@ int main( int argc, char **argv, char **envp )
   std::ofstream FOut;
   std::ofstream FError;
 
-//  std::filebuf buffTarget;
-//  std::filebuf buffOut;
-//  std::filebuf buffError;
   std::streambuf * cinbuf  = NULL;
   std::streambuf * coutbuf = NULL;
   std::streambuf * cerrbuf = NULL;
@@ -94,16 +95,16 @@ int main( int argc, char **argv, char **envp )
 
   if ( argc > 1 )
   {
-    for ( int c = 0; c < argc; c++)
+    for ( size_t c_ = 0; c_ < argc; c_++)
     {
-      if ( CheckForSwitch( argv[ c ] ) )
+      if ( CheckForSwitch( argv[ c_ ] ) )
       {
-        bWide = IsItNarrow( argv[ c ], bWide );
-        EnvSnoop( argv[ c ], envp );
+        bWide = IsItNarrow( argv[ c_ ], bWide );
+        EnvSnoop( argv[ c_ ], envp );
       }
       else
       {
-        argvLocal[ argcLocal++ ] = argv[ c ];
+        argvLocal[ argcLocal++ ] = argv[ c_ ];
       }
     }
   }
@@ -116,21 +117,18 @@ int main( int argc, char **argv, char **envp )
   {
     default:
     case 4:
-//      FError  = buffError.open( argvLocal[ 3 ], std::ios::out );
       FError  = std::ofstream( argvLocal[ 3 ]);
       cerrbuf = std::cerr.rdbuf();      //  save system cerr buffer
       std::cerr.rdbuf(FError.rdbuf());  //  redirect cerr to file
       bError  = true;
 
     case 3:
-//      FOut    = buffOut.open( argvLocal[ 2 ], std::ios::out );
       FOut    = std::ofstream( argvLocal[ 2 ]);
       coutbuf = std::cout.rdbuf();      //  save system cout buffer
       std::cout.rdbuf(FOut.rdbuf());    //  redirect cout to file
       bOut    = true;
 
     case 2:
-//      FTarget = buffTarget.open( argvLocal[ 1 ], std::ios::in | std::ios::binary );
       FTarget = std::ifstream( argvLocal[ 1 ]);
       cinbuf  = std::cin.rdbuf();       //  save system cin buffer
       std::cin.rdbuf(FTarget.rdbuf());  //  redirect cin from file
@@ -140,15 +138,6 @@ int main( int argc, char **argv, char **envp )
     case 0:
       break;
   }
-//  if (!bTarget) {
-//    FTarget.rdbuf(std::cin);
-//  }
-//  if (!bOut) {
-//    FOut.rdbuf(std::cout);
-//  }
-//  if (!bError) {
-//    FError.rdbuf(std::cerr);
-//  }
 
   delete [] argvLocal;
 
@@ -174,31 +163,29 @@ int main( int argc, char **argv, char **envp )
     unsigned long nSpace = 0;
     unsigned long nSpaceCtl = cbLineW * 8 / cbLine;
 
-//    FTarget.read( InBuff, cbInBuff );
     std::cin.read( InBuff, cbInBuff );
-//    cbIn = FTarget.gcount();
     cbIn = std::cin.gcount();
 
     nRecords = ( cbIn + cbLine - 1 ) / cbLine;
 
-    for ( rec = 0, nOffset = 0; rec < nRecords; rec++, nOffset += cbLine, InLine += cbLine, nBuffOffset += cbLine )
+    for ( rec = 0, nOffset = 0;
+          rec < nRecords;
+          rec++, nOffset += cbLine, InLine += cbLine, nBuffOffset += cbLine )
     {
       char          Offset[ 12 ] = "";
       unsigned long current      = nOffset + cbLine;
       unsigned long nRecord      = current < cbIn ? cbLine : cbLine - ( current - cbIn );
 
-//      FOut << "  "
       std::cout << "  "
-           << FormatOffset( Offset, nBuffOffset )
-           << "  "
-           << FormatOctet( InLine, Line, nRecord, bWide )
-           << std::endl
-           ;
+                << FormatOffset( Offset, nBuffOffset )
+                << "  "
+                << FormatOctet( InLine, Line, nRecord, bWide )
+                << std::endl
+                ;
 
       if ( ++nSpace == nSpaceCtl )
       {
         nSpace = 0;
-//        FOut << '\n';
         std::cout << '\n';
       }
     }
@@ -211,16 +198,13 @@ int main( int argc, char **argv, char **envp )
   {
     default:
     case 4:
-//      buffError.close();
-      std::cerr.rdbuf(cerrbuf);
+      std::cerr.rdbuf(cerrbuf);   //  reset cerr
 
     case 3:
-//      buffOut.close();
-      std::cout.rdbuf(coutbuf);
+      std::cout.rdbuf(coutbuf);   //  reset cout
 
     case 2:
-//      buffTarget.close();
-      std::cin.rdbuf(cinbuf);
+      std::cin.rdbuf(cinbuf);     //  reset cin
 
     case 1:
     case 0:
@@ -298,7 +282,7 @@ char *FormatOctet( char *iBuf, char *oBuf, size_t nChar, boolean bWide )
 
   memset( oBuf, ' ', cbLine );
 
-  for ( size_t i = 0; i < nChar; i++ )
+  for ( size_t i_ = 0; i_ < nChar; i_++ )
   {
     Text = *iThis++;
 
